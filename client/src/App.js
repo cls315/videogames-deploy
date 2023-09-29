@@ -6,7 +6,8 @@ import Nav from "./Components/Nav/Nav";
 import Form from "./Views/Form/Form";
 import LandingPage from "./Views/LandingPage/LandingPage";
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:3001/";
+axios.defaults.baseURL =
+  "https://videogames-deploy-production-89d0.up.railway.app/";
 
 function App() {
   const { pathname } = useLocation();
