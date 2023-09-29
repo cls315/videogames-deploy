@@ -1,0 +1,87 @@
+.navToHome {
+  background-color: #333; 
+  padding: 10px 0; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.navLink {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+.navLink:hover {
+  background-color: #555; 
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.formTitle{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-left: 10px;
+}
+  
+label{
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input, textarea{
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.buttonPlatforms{
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inputError, .textareaError{
+  border-color: #ff0000;
+}
+
+.error{
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.submitButton{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover{
+  background-color: #0055b3;
+}

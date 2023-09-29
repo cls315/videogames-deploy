@@ -1,0 +1,114 @@
+.detailGoHome{
+  background-color: #333;
+  padding: 20px;
+}
+
+.goBackLink {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.goBackLink:hover {
+  background-color: #555;
+}
+
+.detailContainer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
+  margin: 10px;
+}
+
+.detailContent{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.detailHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detailImage {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detailName {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.detailInfo{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailInfo h3{
+  font-size: 1rem;
+  color: #666;
+}
+
+.detailDescription {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.detailId{
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.detailRating .detailReleased{
+  font-size: 1rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.detailPlatforms{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailPlatforms h3{
+  font-size: 1rem;
+  color: #333;
+}
+
+.detailPlatforms p{
+  font-size: 1rem;
+  color: #666;
+}
+
+.detailHeader{
+  margin-top: 20px;
+}
+
+.detailGenres{
+  margin-top: 10px;
+}
+
+.detailGenres h3{
+  font-size: 1rem;
+  color: #333;
+}
+
+ul li{
+  list-style: none;
+}
