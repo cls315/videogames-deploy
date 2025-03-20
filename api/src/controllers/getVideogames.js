@@ -8,7 +8,7 @@ const getVideogames = async () => {
       ...results,
       ...(
         await axios.get(
-          `https://api.rawg.io/api/games?page=${i}&page_size=40&key=1d9e4c6e87dc485a8de049e1607e0765`
+          `https://api.rawg.io/api/games?page=${i}&page_size=40&key=8500a05d34aa4bfe808b97c192812563`
         )
       ).data.results,
     ];

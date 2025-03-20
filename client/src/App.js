@@ -6,7 +6,7 @@ import Nav from "./Components/Nav/Nav";
 import Form from "./Views/Form/Form";
 import LandingPage from "./Views/LandingPage/LandingPage";
 import axios from "axios";
-axios.defaults.baseURL = "https://videogames-deploy-fwsu.onrender.com";
+axios.defaults.baseURL = "https://videogames-deploy-knww.onrender.com";
 
 function App() {
   const { pathname } = useLocation();

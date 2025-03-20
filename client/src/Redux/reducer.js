@@ -40,7 +40,10 @@ const rootReducer = (state = initialState, action) => {
     case GET_BY_ID:
       return { ...state, detail: action.payload };
     case GET_GENRES:
-      return { ...state, genres: action.payload };
+      return {
+        ...state,
+        genres: Array.isArray(action.payload) ? action.payload : [],
+      };
     case POST_VIDEOGAMES:
       return {
         ...state,

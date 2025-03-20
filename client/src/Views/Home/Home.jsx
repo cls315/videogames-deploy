@@ -12,6 +12,7 @@ import { useState } from "react";
 const Home = () => {
   const dispatch = useDispatch();
   const videogames = useSelector((state) => state.videogames);
+  console.log(videogames);
   const genres = useSelector((state) => state.genres);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -22,7 +23,9 @@ const Home = () => {
   const numberStart = (currentPage - 1) * perPage;
   const numberEnd = (currentPage - 1) * perPage + perPage;
   const slicePage =
-    videogames.length > 0 ? videogames.slice(numberStart, numberEnd) : [];
+    Array.isArray(videogames) && videogames.length > 0
+      ? videogames.slice(numberStart, numberEnd)
+      : [];
 
   useEffect(() => {
     dispatch(getVideogames());

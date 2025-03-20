@@ -4,7 +4,7 @@ const { Op } = require("sequelize");
 
 const getVideogamesByName = async (name) => {
   const response = await axios.get(
-    `https://api.rawg.io/api/games?key=1d9e4c6e87dc485a8de049e1607e0765&search=${name}`
+    `https://api.rawg.io/api/games?key=${API_KEY}&search=${name}`
   );
 
   apiName = response.data.results.slice(0, 15).map((game) => ({

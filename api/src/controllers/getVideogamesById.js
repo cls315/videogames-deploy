@@ -18,7 +18,7 @@ const getVideogamesById = async (id) => {
     return dbGames;
   } else {
     const { data } = await axios.get(
-      `https://api.rawg.io/api/games/${id}?key=1d9e4c6e87dc485a8de049e1607e0765`
+      `https://api.rawg.io/api/games/${id}?key=${API_KEY}`
     );
     const apiGames = {
       id: data.id,

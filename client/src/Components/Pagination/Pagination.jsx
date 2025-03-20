@@ -1,17 +1,21 @@
 import { useState } from "react";
 import style from "./Pagination.module.css";
 
-const Paginate = ({ currentPage, setCurrentPage, totalPages }) => {
+const Paginate = ({ currentPage, setCurrentPage, totalPages = 1 }) => {
   const [input, setInput] = useState(1);
 
   const nextPage = () => {
-    setInput(input + 1);
-    setCurrentPage(currentPage + 1);
+    if (currentPage < totalPages) {
+      setInput(input + 1);
+      setCurrentPage(currentPage + 1);
+    }
   };
 
   const previousPage = () => {
-    setInput(input - 1);
-    setCurrentPage(currentPage - 1);
+    if (currentPage > 1) {
+      setInput(input - 1);
+      setCurrentPage(currentPage - 1);
+    }
   };
 
   return (
@@ -28,6 +32,7 @@ const Paginate = ({ currentPage, setCurrentPage, totalPages }) => {
         autoComplete="off"
         value={input}
         className={style.pageInput}
+        onChange={(e) => setInput(Number(e.target.value))}
       />
       <span> OF </span>
       <span> {totalPages}</span>

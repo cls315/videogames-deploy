@@ -3,7 +3,7 @@ const { Genre } = require("../db");
 
 const getGenres = async () => {
   const response = await axios.get(
-    `https://api.rawg.io/api/genres?key=1d9e4c6e87dc485a8de049e1607e0765`
+    `https://api.rawg.io/api/genres?key=${API_KEY}`
   );
 
   const genres = response.data.results.map((data) => {

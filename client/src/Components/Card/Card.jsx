@@ -16,7 +16,7 @@ const Card = ({ videogame }) => {
       <h3>{videogame.rating}</h3>
       <h4 className={style.cardGenres}>
         Generos:
-        {videogame.genres?.map((g) => (g.name ? g.name : g)).join(",  ")}
+        {videogame.genres.map((g) => (g.name ? g.name : g)).join(",  ")}
       </h4>
     </div>
   );
